@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dmit2015-review03-jviloria:war">
+    <output-path>$PROJECT_DIR$/dmit2015-review03-jviloria/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>dmit2015-review03-jviloria</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="dmit2015-review03-jviloria.war">
+      <element id="artifact" artifact-name="dmit2015-review03-jviloria:war exploded" />
+    </root>
+  </artifact>
+</component>

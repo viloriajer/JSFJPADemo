@@ -18,9 +18,43 @@
     <microprofile.version>3.3</microprofile.version>
     <junit-jupiter.version>5.5.0</junit-jupiter.version>
     <mockito-core.version>3.1.0</mockito-core.version>
+    <version.lombok>1.18.16</version.lombok>
+    <version.omnifaces>3.8</version.omnifaces>
+    <version.primefaces>8.0</version.primefaces>
+    <version.bootsfaces>1.5.0</version.bootsfaces>
+    <!-- JDBC drivers -->
+    <version.h2database>1.4.200</version.h2database>
   </properties>
-
   <dependencies>
+    <dependency>
+      
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>${version.h2database}</version>
+    </dependency>
+    <!-- Project Lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${version.lombok}</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- Third party JSF libraries -->
+    <dependency>
+      <groupId>org.omnifaces</groupId>
+      <artifactId>omnifaces</artifactId>
+      <version>${version.omnifaces}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.primefaces</groupId>
+      <artifactId>primefaces</artifactId>
+      <version>${version.primefaces}</version>
+    </dependency>
+    <dependency>
+      <groupId>net.bootsfaces</groupId>
+      <artifactId>bootsfaces</artifactId>
+      <version>${version.bootsfaces}</version>
+    </dependency>
     <dependency>
       <groupId>jakarta.platform</groupId>
       <artifactId>jakarta.jakartaee-api</artifactId>
@@ -47,7 +81,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
   <build>
     <finalName>dmit2015-review03-jviloria</finalName>
     <plugins>
